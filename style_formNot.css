@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(1, 1, 15);
+    padding: 5px;
+
+}
+.title{
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.btn-voltar{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: white;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    color: red;
+
+}
+.btn-voltar:active{
+    opacity: 50%;
+}
+.btn{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: rgb(119, 236, 154);
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    color: black ;
+}
+.btn:active{
+    opacity: 50%;
+}
+
+.btn-cad{
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: rgb(255, 158, 94);
+    height: 30px;
+    width: 110px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+}
+.btn-cad:active{
+    opacity: 50%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    padding: 5px;
+    border-radius: 15px;
+}
+.control{
+    margin: 5px;
+    height: 25px;
+    width: 250px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+.logo{
+    float: left;
+    height: 25px;
+    width: 45px;
+}
