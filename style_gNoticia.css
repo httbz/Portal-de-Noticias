@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(1, 1, 15);
+    padding: 5px;
+
+}
+.title{
+    color: white;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+table {
+    margin: 10px;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+    margin-bottom: 20px;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ddd;
+  }
+  
+  tr:hover {
+    background-color: #ccc;
+  }
+  
+.btn-voltar{
+    float: right;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: white;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    color: red;
+
+}
+.btn-voltar:active{
+    opacity: 50%;
+}
+.btn-excluir{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: red;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 2px;
+}
+.btn-excluir:active{
+    opacity: 50%;
+}
+.btn-editar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: yellow;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 2px;
+}
+.btn-editar:active{
+    opacity: 50%;
+}
+.btn-pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: black;
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 2px;
+}
+.btn-pesquisa:active{
+    background-color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(255, 59, 59);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 25px;
+}
+.control{
+    margin: 5px;
+    height: 25px;
+    width: 250px;
+    border-radius: 3px;
+    border-width: 1px;
+}
+.logo{
+    float: left;
+    height: 25px;
+    width: 45px;
+}
+.title-container{
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 25px;
+    color: white;
+}
