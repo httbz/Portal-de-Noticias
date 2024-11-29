@@ -28,11 +28,11 @@
     <header>
     <img src="./assets/img/cnn-logo.png" alt="Logo" class="logo">
         <h1 class="title">Portal de Notícias</h1>
-        <a href="login.php" class="btn-login">Login</a>
+        <a href="gerenciarNoticia.php" class="btn-voltar">Voltar</a>
     </header>
 
     <div class="container">
-        <h1>Adicionar Novas Notícias</h1>
+        <h1 class="title-not">Adicionar Novas Notícias</h1>
         <form action="salvarnoticias.php" method="post" enctype="multipart/form-data">
 
             <label for="">Titulo</label><br>

@@ -75,7 +75,7 @@ table {
     justify-content: center;
     padding: 2px;
     text-decoration: none;
-    background-color: red;
+    background-color: rgb(255, 59, 59);
     height: 30px;
     width: 100px;
     border-radius: 5px;
@@ -94,17 +94,36 @@ table {
     justify-content: center;
     padding: 2px;
     text-decoration: none;
-    background-color: yellow;
+    background-color: black;
     height: 30px;
     width: 100px;
     border-radius: 5px;
     border: none;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 700;
     margin: 2px;
 }
 .btn-editar:active{
+    opacity: 50%;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    text-decoration: none;
+    background-color: black;
+    height: 30px;
+    width: 160px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px;
+}
+.btn:active{
     opacity: 50%;
 }
 .btn-pesquisa{
@@ -124,7 +143,7 @@ table {
     margin: 2px;
 }
 .btn-pesquisa:active{
-    background-color: white;
+    opacity: 50%;
 }
 .container{
     display: flex;

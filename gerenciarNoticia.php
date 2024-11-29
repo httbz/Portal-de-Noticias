@@ -39,6 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <main>
         <div class="container">
             <h1 class="title-container">Gerenciamento de Notícias</h1>
+            <a href="formNoticia.php" class="btn">Publicar Notícia +</a>
             <div class="row">
                 <input type="text" name="search" placeholder="Pesquisar por titulo" class="control">
                 <button type="submit" class="btn-pesquisa">Pesquisar</button>
@@ -58,11 +59,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <td><?php echo $noticia['autor']; ?></td>
                             <td>
                                 <div class="row">
-                                    <form method="POST" style="display: inline;">
-                                        <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
-                                        <button type="submit" name="delete" class="btn-excluir">Excluir ✖︎</button>
-                                    </form>
-                                    <a href="editarUsuario.php?id=<?php echo $user['id']; ?>" class="btn-editar">Editar
+                                    <a href="deletarNoticia.php?id=<?php echo $noticia['id']; ?>" class="btn-excluir">Excluir
+                                    ✖︎</a>
+                                    <a href="editarNoticia.php?id=<?php echo $noticia['id']; ?>" class="btn-editar">Editar
                                         ✎</a>
                                 </div>
                             </td>

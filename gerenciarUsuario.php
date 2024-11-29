@@ -18,6 +18,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 }
+$termo = $_GET['pesquisa'] ?? '';
+$usuarios = $usuario->pesquisarUsuarios($termo);
+
 ?>
 
 <!DOCTYPE html>
@@ -61,10 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <td><?php echo $user['email']; ?></td>
                             <td>
                                 <div class="row">
-                                    <form method="POST" style="display: inline;">
-                                        <input type="hidden" name="id" value="<?php echo $user['id']; ?>">
-                                        <button type="submit" name="delete" class="btn-excluir">Excluir ✖︎</button>
-                                    </form>
+                                    <a href="deletarUsuario.php?id=<?php echo $user['id']; ?>" class="btn-excluir">Excluir
+                                        ✖︎</a>
                                     <a href="editarUsuario.php?id=<?php echo $user['id']; ?>" class="btn-editar">Editar
                                         ✎</a>
                                 </div>

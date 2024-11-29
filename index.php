@@ -45,6 +45,7 @@ $dados_noticia = $noticia->lerNoticia();
     <main>
         <div class="container">
             <?php while ($row = $dados->fetch(PDO::FETCH_ASSOC)):
+            $nome = $usuario->lerPorId($row['autor']);
                 //formatação da data
                 $dataOriginal = $row['data_publicacao'];
                 $dataFormatada = DateTime::createFromFormat('Y-m-d', $dataOriginal)->format('d/m/Y'); ?>
@@ -52,7 +53,7 @@ $dados_noticia = $noticia->lerNoticia();
                 <div class="user-card">
                     <div class="title-not"><?php echo ucfirst($row['titulo']); ?></div>
                     <div><img src="./uploads/<?php echo $row['imagem']; ?>" alt="imagem da notícia" class="img"></div>
-                    <div class="autor">Escrito por: <?php echo $row['autor']; ?></div>
+                    <div class="autor">Escrito por: <?php  echo $nome['nome']; ?></div>
                     <div class="conteudo"><?php echo $row['conteudo']; ?></div>
                     <div class="data-publicacao"><?php echo $dataFormatada ?></div>
                 </div>

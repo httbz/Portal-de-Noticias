@@ -75,7 +75,7 @@ table {
     justify-content: center;
     padding: 2px;
     text-decoration: none;
-    background-color: red;
+    background-color: rgb(255, 59, 59);
     height: 30px;
     width: 100px;
     border-radius: 5px;
@@ -94,12 +94,12 @@ table {
     justify-content: center;
     padding: 2px;
     text-decoration: none;
-    background-color: yellow;
+    background-color: black;
     height: 30px;
     width: 100px;
     border-radius: 5px;
     border: none;
-    color: black;
+    color: white;
     font-size: 18px;
     font-weight: 700;
     margin: 2px;
@@ -123,7 +123,7 @@ table {
     font-weight: 500;
     margin: 2px;
 }
-.btn-editar:active{
+.btn-pesquisa:active{
     opacity: 50%;
 }
 .container{
